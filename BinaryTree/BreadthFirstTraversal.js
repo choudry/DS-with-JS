@@ -1,12 +1,6 @@
-class Node {
-    constructor(val) {
-        this.val = val;
-        this.left = null;
-        this.right = null;
-    }
-}
+import Node from "./Node"
 
-const breadthFirstValue = (root) => {
+const breadthFirstTraversal = (root) => {
     if (root === null) return 
     const values = []
     const queue = [ root ]
@@ -40,4 +34,6 @@ const breadthFirstValue = (root) => {
       b.left = d;
       b.right = e;
       c.right = f;
+
+      console.log(breadthFirstTraversal(a));
       

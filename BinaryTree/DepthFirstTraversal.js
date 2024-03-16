@@ -1,11 +1,4 @@
-
-class Node {
-    constructor(val) {
-        this.val = val;
-        this.left = null;
-        this.right = null;
-    }
-}
+import Node from "./Node";
 
 /**
  * Depth first traversal of binary tree
